@@ -13,6 +13,9 @@ import './charts/ChartjsConfig';
 
 import MainLayout from './layouts/MainLayout';
 import Dashboard from './pages/Dashboard';
+import ListPartner from './pages/partner/ListPartner';
+import NewPartner from './pages/partner/NewPartner';
+import SignIn from './pages/auth/SignIn';
 
 function App() {
 
@@ -29,7 +32,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<MainLayout />}>
           <Route index element={<Dashboard/>}/>
+          <Route path="/new-partner" element={<NewPartner />} />
+          <Route path="/list-partner" element={<ListPartner />} />
         </Route>
+        <Route path="/login" element={<SignIn/>} />
         
       </Routes>
     </>
