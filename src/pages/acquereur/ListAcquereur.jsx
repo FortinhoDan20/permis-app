@@ -1,56 +1,37 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const ListPartner = () => {
+const ListAcquereur = () => {
   return (
     <>
       <div className="sm:flex sm:justify-between sm:items-center mb-8">
         {/* Left: Title */}
         <div className="mb-4 sm:mb-0">
           <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">
-            Dashboard
+            Liste des Acquéreurs
           </h1>
         </div>
 
         {/* Right: Actions */}
         <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
           {/* Filter button */}
-
-          <button className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">
-            <svg
-              className="fill-current shrink-0 xs:hidden"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-            >
-              <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-            </svg>
-            <span className="max-xs:sr-only">Add View</span>
-          </button>
+          <NavLink to="/acquereur">
+            <button className="btn  bg-blue-500 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">
+                <svg
+                className="fill-current shrink-0 xs:hidden"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                >
+                <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
+                </svg>
+                <span className="max-xs:sr-only">Nouvel Acquéreur</span>
+            </button>
+          </NavLink>
         </div>
       </div>
-      <NavLink to="/new-partner">
-        <button
-          href="/add"
-          className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white float-end mt-2 mx-3 py-2"
-        >
-          <svg
-            className="fill-current shrink-0 xs:hidden "
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-          >
-            <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-          </svg>
-          <span className="max-xs:sr-only">Nouveau</span>
-        </button>
-      </NavLink>
       <div className="col-span-full xl:col-span-8 bg-white dark:bg-gray-800 shadow-sm rounded-xl">
-        <header className="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
-          <h2 className="font-semibold text-gray-800 dark:text-gray-100">
-            Liste des Associés
-          </h2>
-        </header>
+
         <div className="p-3">
           {/* Table */}
           <div className="overflow-x-auto">
@@ -257,6 +238,6 @@ const ListPartner = () => {
       </div>
     </>
   );
-};
+}
 
-export default ListPartner;
+export default ListAcquereur;

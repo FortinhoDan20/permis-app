@@ -27,7 +27,7 @@ function  DashboardCard05() {
     50.91, 58.52, 53.37, 57.58, 59.09, 59.36, 58.71, 59.42, 55.93, 57.71,
     50.62, 56.28, 57.37, 53.08, 55.94, 55.82, 53.94, 52.65, 50.25,
   ];
-
+ 
   const [slicedData, setSlicedData] = useState(data.slice(0, range));
 
   // Generate fake dates from now to back in time

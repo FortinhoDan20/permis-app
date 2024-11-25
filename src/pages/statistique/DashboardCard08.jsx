@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DashboardCard07() {
+function DashboardCard08() { 
   return (
     <div className="col-span-full xl:col-span-8 mt-4 bg-white dark:bg-gray-800 shadow-sm rounded-xl">
       <header className="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
@@ -27,7 +27,7 @@ function DashboardCard07() {
                 </th>
                 <th className="p-2">
                   <div className="font-semibold text-center">Conversion</div>
-                </th>
+                </th> 
               </tr>
             </thead>
             {/* Table body */}
@@ -178,4 +178,4 @@ function DashboardCard07() {
   );
 }
 
-export default DashboardCard07;
+export default DashboardCard08;

@@ -27,7 +27,7 @@ function DashboardCard07() {
                 </th>
                 <th className="p-2">
                   <div className="font-semibold text-center">Conversion</div>
-                </th>
+                </th> 
               </tr>
             </thead>
             {/* Table body */}

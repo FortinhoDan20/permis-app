@@ -27,7 +27,7 @@ function DashboardCard06() {
         borderWidth: 0,
       },
     ],
-  };
+  }; 
 
   return (
     <div className="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white dark:bg-gray-800 shadow-sm rounded-xl">
