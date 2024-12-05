@@ -47,16 +47,16 @@ function App() {
      
         <Route exact path="/" element={!auth.currentUser ?  <SignIn/> : <MainLayout />}>
           <Route index element={!auth.currentUser ?  <SignIn/> :<Dashboard/>}/>
-          <Route path="/acquereur" element={!auth.currentUser ?  <SignIn/> :<Acquereur />} />
-          <Route path="/liste-acquereur" element={!auth.currentUser ?  <SignIn/> :<ListAcquereur />} />
-          <Route path="/apurement" element={!auth.currentUser ?  <SignIn/> :<Apurement/>} />
-          <Route path="/list-permis-imprime" element={!auth.currentUser ?  <SignIn/> :<PermisImprime />} />
-          <Route path="/list-permis-non-apure" element={!auth.currentUser ?  <SignIn/> :<PermisNA />} />
-          <Route path="/nouvel-utilisateur" element={!auth.currentUser ?  <SignIn/> :<Utilisateur />} />
-          <Route path="/list-utilisateur" element={!auth.currentUser ?  <SignIn/> :<ListUtilisateur />} />
-          <Route path="/rapport-journalier" element={!auth.currentUser ?  <SignIn/> :<Journalier />} />
-          <Route path="/rapport-mensuel" element={!auth.currentUser ?  <SignIn/> :<ListUtilisateur />} />
-          <Route path="/rapport-annuel" element={!auth.currentUser ?  <SignIn/> :<ListUtilisateur />} />
+          <Route exact path="/acquereur" element={!auth.currentUser ?  <SignIn/> :<Acquereur />} />
+          <Route exact path="/liste-acquereur" element={!auth.currentUser ?  <SignIn/> :<ListAcquereur />} />
+          <Route exact path="/apurement" element={!auth.currentUser ?  <SignIn/> :<Apurement/>} />
+          <Route exact path="/list-permis-imprime" element={!auth.currentUser ?  <SignIn/> :<PermisImprime />} />
+          <Route exact path="/list-permis-non-apure" element={!auth.currentUser ?  <SignIn/> :<PermisNA />} />
+          <Route exact path="/nouvel-utilisateur" element={!auth.currentUser ?  <SignIn/> :<Utilisateur />} />
+          <Route exact path="/list-utilisateur" element={!auth.currentUser ?  <SignIn/> :<ListUtilisateur />} />
+          <Route exact path="/rapport-journalier" element={!auth.currentUser ?  <SignIn/> :<Journalier />} />
+          <Route exact path="/rapport-mensuel" element={!auth.currentUser ?  <SignIn/> :<ListUtilisateur />} />
+          <Route exact path="/rapport-annuel" element={!auth.currentUser ?  <SignIn/> :<ListUtilisateur />} />
         </Route>
         <Route path="/login" element={<SignIn/>} />
         

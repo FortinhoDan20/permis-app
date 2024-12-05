@@ -70,7 +70,7 @@ const initialUser = localStorage.getItem('user')
         }
         console.log('token config :', token, config )
         try {
- const response = await axios.get('https://permis-api-tsjz.onrender.com/api-user/', config)
+            const response = await axios.get('https://permis-api-tsjz.onrender.com/api-user/', config)
             console.log(response.data.data)
                         if(response){
                 dispatch(getAllUserFulfilled(response.data))
